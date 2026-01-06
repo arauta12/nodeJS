@@ -11,8 +11,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Step 1
-              run: echo "$(DEMO_ENV)"
+              run: echo "$DEMO_ENV"
             - name: Step 2
               env:
                   DEMO_VAR: ${{ vars.REPOVAR }}
-              run: echo Var $(DEMO_VAR)
+              run: echo Var $DEMO_VAR
