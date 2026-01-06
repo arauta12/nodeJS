@@ -1,4 +1,4 @@
-name: Scheduled Workflow
+name: Push Workflow
 on:
     push:
         branches:
