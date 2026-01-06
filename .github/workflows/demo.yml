@@ -1,10 +1,11 @@
 name: Scheduled Workflow
 on:
-    schedule:
-        - cron: "*/5 * * * *"
+    push:
+        branches:
+            - main
 jobs:
     test_schedule:
         runs-on: ubuntu-latest
         steps:
-            - name: Step 2
+            - name: Step 1
               run: echo "DONE!"
